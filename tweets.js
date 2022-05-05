@@ -1,6 +1,6 @@
 const T = require("./twitterClient");
 
-export const SalaTweet = async () => {
+const SalaTweet = async () => {
 	const tweet = {
 		status:
 			"إِنَّ ٱللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى ٱلنَّبِىِّ ۚ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا",
@@ -14,7 +14,7 @@ export const SalaTweet = async () => {
 	}
 };
 
-export const ManarTweet = async () => {
+const ManarTweet = async () => {
 	const tweet = {
 		status:
 			"اللهم ارحم منار السيد واغفر لها ذنبها وادخلها فسيح جناتك واجعل مرضها شفيعا لها يوم القيامه",
@@ -45,7 +45,7 @@ let duaa = [
 	"اللهم انك عفو تحب العفو فاعف عنا",
 ];
 
-export const duaaTweet = async () => {
+const duaaTweet = async () => {
 	const tweet = {
 		status: duaa[Math.floor(Math.random() * duaa.length)],
 	};
@@ -57,3 +57,6 @@ export const duaaTweet = async () => {
 		console.log(err);
 	}
 };
+
+// export tweets
+module.exports = { duaaTweet, ManarTweet, SalaTweet };
