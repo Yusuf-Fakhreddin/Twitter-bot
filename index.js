@@ -5,7 +5,7 @@ SaluAlaElnabi.start();
 Manar.start();
 duaa.start();
 
-export const test = async () => {
+const test = async () => {
 	const tweet = {
 		status: "test",
 	};
