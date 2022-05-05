@@ -1,0 +1,20 @@
+{
+	"name": "2oofa-bot",
+	"version": "1.0.0",
+	"description": "twitter bot",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js"
+	},
+	"engines": {
+		"node": "14.17.6"
+	},
+	"author": "Yusuf-Fakhreddin",
+	"license": "ISC",
+	"dependencies": {
+		"cron": "^2.0.0",
+		"dotenv": "^16.0.0",
+		"twit": "^2.2.11"
+	}
+}
