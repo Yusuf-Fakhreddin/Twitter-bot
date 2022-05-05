@@ -1,5 +1,5 @@
 // import cron jobs
-import { SaluAlaElnabi, Manar, duaa } from "./cronJobs";
+const { SaluAlaElnabi, Manar, duaa } = require("./cronJobs");
 
 SaluAlaElnabi.start();
 Manar.start();
