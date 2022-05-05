@@ -1,7 +1,7 @@
 // import cron jobs
-import { SaluAlaElnabi, Manar, RizkDuaa, NightDuaa } from "./cronJobs";
+import { SaluAlaElnabi, Manar, Istghfar, Ist3aza } from "./cronJobs";
 
 SaluAlaElnabi.start();
 Manar.start();
-RizkDuaa.start();
-NightDuaa.start();
+Istghfar.start();
+Ist3aza.start();

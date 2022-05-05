@@ -8,6 +8,7 @@ export const SalaTweet = async () => {
 
 	try {
 		const result = await T.post("statuses/update", tweet);
+		console.log("SalaTweet");
 	} catch (err) {
 		console.log(err);
 	}
@@ -21,12 +22,13 @@ export const ManarTweet = async () => {
 
 	try {
 		const result = await T.post("statuses/update", tweet);
+		console.log("ManarTweet");
 	} catch (err) {
 		console.log(err);
 	}
 };
 
-export const RizkDuaaTweet = async () => {
+export const Ist3azaTweet = async () => {
 	const tweet = {
 		status:
 			"اللَّهُمَّ إنِّي أعُوذُ بكَ مِنَ العَجْزِ والكَسَلِ، والجُبْنِ والبُخْلِ والهَرَمِ، وأَعُوذُ بكَ مِن عَذابِ القَبْرِ، وأَعُوذُ بكَ مِن فِتْنَةِ المَحْيا والمَماتِ",
@@ -34,18 +36,20 @@ export const RizkDuaaTweet = async () => {
 
 	try {
 		const result = await T.post("statuses/update", tweet);
+		console.log("Ist3azaTweet");
 	} catch (err) {
 		console.log(err);
 	}
 };
 
-export const NightDuaaTweet = async () => {
+export const IstghfarTweet = async () => {
 	const tweet = {
 		status: "أستغفِرُ اللهَ، الذي لا إله إلا هو، الحَيَّ القيومَ، وأتوبُ إليه",
 	};
 
 	try {
 		const result = await T.post("statuses/update", tweet);
+		console.log("IstghfarTweet");
 	} catch (err) {
 		console.log(err);
 	}

@@ -2,8 +2,8 @@ const CronJob = require("cron").CronJob;
 const {
 	SalaTweet,
 	ManarTweet,
-	NightDuaaTweet,
-	RizkDuaaTweet,
+	IstghfarTweet,
+	Ist3azaTweet,
 } = require("./tweets");
 
 // cron job every friday at midnight egypt time
@@ -24,17 +24,17 @@ export const Manar = new CronJob(
 	"Africa/Cairo"
 );
 
-export const RizkDuaa = new CronJob(
+export const Ist3aza = new CronJob(
 	"0 10 * * 1,3",
-	RizkDuaaTweet,
+	Ist3azaTweet,
 	null,
 	false,
 	"Africa/Cairo"
 );
 
-export const NightDuaa = new CronJob(
+export const Istghfar = new CronJob(
 	"0 10 * * 0,2,4",
-	NightDuaaTweet,
+	IstghfarTweet,
 	null,
 	false,
 	"Africa/Cairo"
