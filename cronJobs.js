@@ -11,10 +11,16 @@ const SaluAlaElnabi = new CronJob(
 );
 
 // cron job every friday at 02:00 pm egypt time
-const Manar = new CronJob("0 2 * * 5", ManarTweet, null, false, "Africa/Cairo");
+const Manar = new CronJob(
+	"0 14 * * 5",
+	ManarTweet,
+	null,
+	false,
+	"Africa/Cairo"
+);
 
 const duaa = new CronJob(
-	"0 0 * * 1,2,3,4,6,0",
+	"0 0 * * 0,2,4",
 	duaaTweet,
 	null,
 	false,
